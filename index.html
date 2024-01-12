@@ -3,12 +3,17 @@
 
 <head>
   <meta charset="utf-8">
- 
+
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Bootstrap 5 Portfolio Clone</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <style>
+    $grid-breakpoints: (
+      sm: 576px,
+      md: 768px,
+      lg: 1220px,
+    );
   .green-line {
     border-left: 4px solid #0c8831; /* Green color */
     padding-left: 15px;
@@ -21,7 +26,7 @@
     }
 
     </style>
-  
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/bootstrap-icons.svg"></script>
@@ -35,18 +40,18 @@
 
 <body>
   <header class="p-3 p-lg-5 m-2 m-sm-2 theme-bg-light">
-    
+
       <div class="row">
       <div class="col-md-8">
     <h1 class="fw-bold mb-1">Simon Doe</h1>
-        
+
         <h4 class="fw-light mb-4">Senior Software Engineer</h4>
         <p class="mb-4">I'm a software engineer specialised in frontend and backend development for complex scalable web apps. I write about software development on <a href="" class="link-success link-underline-opacity-0 link-underline-opacity-100-hover">my blog</a>. Want to know how I may help your project? Check out my project <a href="" class="link-success link-underline-opacity-0 link-underline-opacity-100-hover">portfolio</a> and <a href="" class="link-success link-underline-opacity-0 link-underline-opacity-100-hover">online resume</a>.
           <div>
         <button type="button" class="btn btn-success fw-bold mt-3 mb-4" ><i class="bi bi-arrow-right-circle-fill"></i>&nbspView Portfolio</button>
         <button type="button" class="btn btn-secondary fw-bold mt-3 mb-4"><i class="bi bi-file-text-fill"></i>&nbspView Resume</button></p>
           </div>
-      
+
       </div>
         <div class="col-md-4">
           <img class="img-fluid mb-3 mb-lg-0 me-md-0" src="profile.jpg" height="400px">
@@ -54,18 +59,18 @@
         </div>
     </div>  
     </div>
-  
 
-  
+
+
   <header class="text-left mt-3 mb-0">
     <h2 class="fw-bold green-line">What I do</h2>
   </header>
   <div class="text-left mt-3 mb-5">
 <p>I have more than 10 years' experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my project <a href="" class="link-success link-underline-opacity-0 link-underline-opacity-100-hover">online resume</a> and <a href="" class="link-success link-underline-opacity-0 link-underline-opacity-100-hover">portfolio</a>.</i></p>
   </div>
- 
-    
-   
+
+
+
 <!-- Repeat the div below for each project -->
       <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-6">
@@ -92,7 +97,7 @@
         </div>
      </div>
 
-     
+
           <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="card border-0 mb-3">
           <div class="card-body">
@@ -102,7 +107,7 @@
           </div>
         </div>
       </div>
-  
+
 
           <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="card border-0 mb-3">
@@ -114,7 +119,7 @@
         </div>
       </div>
       </div>
-   
+
       <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="card border-0 mb-3">
@@ -160,7 +165,7 @@
           </div>
         </div>
       </div>
-      
+
       </div>
 
 <div class="m-3" align="center">
@@ -172,23 +177,18 @@
     </header>
 
     <!----carousel---->
-    <!--data-bs-target="indicator"-->
+    <!--large screen-->
+
+    <div class="d-none d-lg-block">
     <div id="autoCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
             <div class="d-none d-lg-block">
             <button type="button" data-bs-slide-to="0" data-bs-target="indicator" class="active" aria-current="true"></button>
             <button type="button" data-bs-slide-to="1" data-bs-target="indicator"></button>
             </div>
-            <div class="d-md-inline-block d-none d-lg-none d-sm-none"> 
-            <button type="button" data-bs-slide-to="0" data-bs-target="indicator"></button>
-            <button type="button" data-bs-slide-to="1" data-bs-target="indicator"></button>
-            <button type="button" data-bs-slide-to="2" data-bs-target="indicator"></button>
-            <button type="button" data-bs-slide-to="3" data-bs-target="indicator"></button>
-            <button type="button" data-bs-slide-to="4" data-bs-target="indicator"></button>
-            <button type="button" data-bs-slide-to="5" data-bs-target="indicator"></button>
-            </div>
+            
        </div>
-     
+
     <div class="row">     
       <div class="carousel-inner">
 
@@ -197,7 +197,150 @@
             <div class="row">
 
           <!--First item-->    
-              <div class="col-lg-4 col-md-12 col-sm-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+              <div class="col-lg-4"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+                <p>
+                  Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
+                </p>
+              <div class="row">
+                <div class="row align-items-center">
+                  <div class="col-md-2"><img src="profile-1.png" height="50px"></div>
+                  <div class="col-md-10">
+                    <p class="text-secondary fw-light" style="font-size: 14px; padding-left: 1em; padding-top: 13px">James Lee<br>Project Manager, Amazon</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+
+
+          <!-- Second Item -->
+      
+                <div class="col-lg-4"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+                  <p>
+                    Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
+                  </p>
+                <div class="row">
+                  <div class="row align-items-center">
+                    <div class="col-md-2"><img src="profile-2.png" height="50px"></div>
+                    <div class="col-md-10">
+                      <p class="text-secondary fw-light" style="font-size: 14px; padding-left: 1em; padding-top: 13px">James Lee<br>Project Manager, Amazon</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+          <!----Third item--->
+        
+                <div class="col-lg-4"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+                  <p>
+                    Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
+                  </p>
+                <div class="row">
+                  <div class="row align-items-center">
+                    <div class="col-md-2"><img src="profile-3.png" height="50px"></div>
+                    <div class="col-md-10">
+                      <p class="text-secondary fw-light" style="font-size: 14px; padding-left: 1em; padding-top: 13px">Olivia White<br>Project Manager, Dropbox</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+            </div> <!--row-->
+          </div> <!--carousel item active-->
+
+      <!--Slide 2-->
+      <div class="carousel-item" data-bs-interval="4000">
+            <div class="row">
+
+          <!--First item-->
+              <div class="col-lg-4"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+                <p>
+                  Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
+                </p>
+              <div class="row">
+                <div class="row align-items-center">
+                  <div class="col-md-2"><img src="profile-4.png" height="50px"></div>
+                  <div class="col-md-10">
+                    <p class="text-secondary fw-light" style="font-size: 14px; padding-left: 1em; padding-top: 13px">Samuel Reyes<br>CTO, StartupHub</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+
+
+          <!-- Second Item -->
+  
+                <div class="col-lg-4"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+                  <p>
+                    Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
+                  </p>
+                <div class="row">
+                  <div class="row align-items-center">
+                    <div class="col-md-2"><img src="profile-5.png" height="50px"></div>
+                    <div class="col-md-10">
+                      <p class="text-secondary fw-light" style="font-size: 14px; padding-left: 1em; padding-top: 13px">Brandon James<br>Project Manager, Google</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+          <!----Third item--->
+        
+                <div class="col-lg-4"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+                  <p>
+                    Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
+                  </p>
+                <div class="row">
+                  <div class="row align-items-center">
+                    <div class="col-md-2"><img src="profile-6.png" height="50px"></div>
+                    <div class="col-md-10">
+                      <p class="text-secondary fw-light" style="font-size: 14px; padding-left: 1em; padding-top: 13px">Kate Sanders<br>Project Manager, Uber</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+            </div> <!--row-->
+         </div> <!--carousel item active-->
+                                                    <!--------------------------------------------->
+      </div><!--carousel inner-->      
+      </div> <!--carousel timer-->
+    </div><!--autoCarousel-->
+    </div><!--close for lg screen-->
+
+
+
+
+    
+    <!--medium, small screen-->
+    <div class="d-md-inline-block d-block d-lg-none"> 
+    <div id="autoCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+            
+            <div class="d-md-inline-block d-none d-lg-none d-sm-none"> 
+              <button type="button" data-bs-slide-to="0" data-bs-target="indicator" class="active" aria-current="true"></button>
+            <button type="button" data-bs-slide-to="1" data-bs-target="indicator"></button>
+            <button type="button" data-bs-slide-to="2" data-bs-target="indicator"></button>
+            <button type="button" data-bs-slide-to="3" data-bs-target="indicator"></button>
+            <button type="button" data-bs-slide-to="4" data-bs-target="indicator"></button>
+            <button type="button" data-bs-slide-to="5" data-bs-target="indicator"></button>
+            </div>
+       </div>
+
+    <div class="row">     
+      <div class="carousel-inner">
+
+        <!--slide 1-->
+          <div class="carousel-item active" data-bs-interval="4000">
+            <div class="row">
+
+          <!--First item-->    
+              <div class="col-md-12 col-sm-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
                 <p>
                   Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
                 </p>
@@ -211,12 +354,12 @@
               </div>
             </div>
               </div></div></div>
-            
+
 
           <!-- Second Item -->
         <div class="carousel-item" data-bs-interval="4000">
           <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+                <div class="col-md-12 col-sm-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
                   <p>
                     Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
                   </p>
@@ -234,7 +377,7 @@
           <!----Third item--->
         <div class="carousel-item" data-bs-interval="4000">
           <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+                <div class="col-md-12 col-sm-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
                   <p>
                     Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
                   </p>
@@ -248,7 +391,7 @@
                 </div>
               </div>
                 </div>
-              
+
             </div> <!--row-->
           </div> <!--carousel item active-->
 
@@ -257,7 +400,7 @@
             <div class="row">
 
           <!--First item-->
-              <div class="col-lg-4 col-md-12 col-sm-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+              <div class="col-md-12 col-sm-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
                 <p>
                   Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
                 </p>
@@ -276,7 +419,7 @@
           <!-- Second Item -->
         <div class="carousel-item" data-bs-interval="4000">
           <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+                <div class="col-md-12 col-sm-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
                   <p>
                     Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
                   </p>
@@ -294,7 +437,7 @@
           <!----Third item--->
         <div class="carousel-item" data-bs-interval="4000">
           <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+                <div class="col-md-12 col-sm-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
                   <p>
                     Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
                   </p>
@@ -315,13 +458,12 @@
       </div><!--carousel inner-->      
       </div> <!--carousel timer-->
     </div><!--autoCarousel-->
-     
+    </div><!--close md sm screen-->
 
-  
+
   <!--<footer class="bg-light text-center py-3">
     <p> Template Copyright &copy; <a href="" class="link-success link-underline-opacity-0 link-underline-opacity-100-hover">3rd Wave Media</a></p>
   </footer>-->
 </body>
 
 </html>
-

@@ -175,8 +175,18 @@
     <!--data-bs-target="indicator"-->
     <div id="autoCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="bullet" data-bs-slide-to="0" data-bs-target="indicator" class="active" aria-current="true"></button>
-        <button type="bullet" data-bs-slide-to="1" data-bs-target="indicator"></button>
+           <div class="d-none d-lg-block">
+           <button type="bullet" data-bs-slide-to="0" data-bs-target="indicator" class="active" aria-current="true"></button>
+           <button type="bullet" data-bs-slide-to="1" data-bs-target="indicator"></button>
+           </div>
+           <div class="d-block d-sm-none"> 
+           <button type="bullet" data-bs-slide-to="0" data-bs-target="indicator"></button>
+           <button type="bullet" data-bs-slide-to="1" data-bs-target="indicator"></button>
+           <button type="bullet" data-bs-slide-to="2" data-bs-target="indicator"></button>
+           <button type="bullet" data-bs-slide-to="3" data-bs-target="indicator"></button>
+           <button type="bullet" data-bs-slide-to="4" data-bs-target="indicator"></button>
+           <button type="bullet" data-bs-slide-to="5" data-bs-target="indicator"></button>
+           </div>
       </div>
      
     <div class="row">     
@@ -187,7 +197,7 @@
             <div class="row">
 
           <!--First item-->    
-              <div class="col-md-4"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+              <div class="col-lg-4 col-md-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
                 <p>
                   Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
                 </p>
@@ -200,11 +210,13 @@
                 </div>
               </div>
             </div>
-              </div>
+              </div></div></div>
             
 
           <!-- Second Item -->
-                <div class="col-md-4"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+        <div class="carousel-item" data-bs-interval="4000">
+          <div class="row">
+                <div class="col-lg-4 col-md-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
                   <p>
                     Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
                   </p>
@@ -217,10 +229,12 @@
                   </div>
                 </div>
               </div>
-                </div>
+                </div></div></div>
 
           <!----Third item--->
-                <div class="col-md-4"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+        <div class="carousel-item" data-bs-interval="4000">
+          <div class="row">
+                <div class="col-lg-4 col-md-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
                   <p>
                     Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
                   </p>
@@ -243,7 +257,7 @@
             <div class="row">
 
           <!--First item-->
-              <div class="col-md-4"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+              <div class="col-lg-4 col-md-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
                 <p>
                   Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
                 </p>
@@ -256,11 +270,13 @@
                 </div>
               </div>
             </div>
-              </div>
+              </div></div></div>
 
 
           <!-- Second Item -->
-                <div class="col-md-4"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+        <div class="carousel-item" data-bs-interval="4000">
+          <div class="row">
+                <div class="col-lg-4 col-md-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
                   <p>
                     Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
                   </p>
@@ -273,10 +289,12 @@
                   </div>
                 </div>
               </div>
-                </div>
+                </div></div></div>
 
           <!----Third item--->
-                <div class="col-md-4"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
+        <div class="carousel-item" data-bs-interval="4000">
+          <div class="row">
+                <div class="col-lg-4 col-md-12"><div class="card border-0 bg-light m-2 p-5 pt-4 pb-4">
                   <p>
                     Simon is a brilliant software engineer! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
                   </p>
@@ -293,7 +311,7 @@
 
             </div> <!--row-->
          </div> <!--carousel item active-->
-        
+                                                    <!--------------------------------------------->
       </div><!--carousel inner-->      
       </div> <!--carousel timer-->
     </div><!--autoCarousel-->

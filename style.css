@@ -1,3 +1,4 @@
+
 .green-line { 
   border-left: 4px solid #0c8831; /* Green color */
   padding-left: 15px
@@ -22,7 +23,6 @@
 }
 #img-display {
   height: 200px; 
-  object-fit: cover
 }
 
 

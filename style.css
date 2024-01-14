@@ -1,2 +1,28 @@
+.green-line { 
+  border-left: 4px solid #0c8831; /* Green color */
+  padding-left: 15px
+}
+.link {
+    color: black
+}
+.link:hover {
+    color: #198754
+}
+.card-text {
+  font-size: 14px
+}
+.text-secondary.fw-light {
+  font-size: 14px;
+  padding-left: 1em;
+  padding-top: 13px;
+}
+#featuredProjects {
+  text-decoration: underline; 
+  text-decoration-color: #ced4da
+}
+#img-display {
+  height: 200px; 
+  object-fit: cover
+}
 
 
